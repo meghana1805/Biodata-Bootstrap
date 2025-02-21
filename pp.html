@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        h2{
+            border:none !important
+        }
+        button{
+            background-color: #1a237e !important;
+            color: white !important;
+        }
+        .profile-header {
+            background: linear-gradient(to right, #1a237e, #283593);
+            color: white;
+            padding: 2rem;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid white;
+            border-radius: 8px;
+        }
+        .section-title {
+            color: #1a237e;
+            font-weight: bold;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 0.5rem;
+        }
+        .container-fluid {
+            padding: 2rem;
+        }
+        #profileCarousel {
+            width: 200px;
+            height: 200px;
+        }
+        #profileCarousel .carousel-inner {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Profile Header with Carousel -->
+        <div class="profile-header mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div id="profileCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img1.jpg" class="profile-img d-block w-100" alt="Profile Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img3.jpg" class="profile-img d-block w-100" alt="Profile Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img2.jpg" class="profile-img d-block w-100" alt="Profile Image 3">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#profileCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#profileCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-9">
+                    <h1>N.Meghana</h1>
+                    <h3>Aspiring AI&ML Scientist</h3>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <p>Phone: +91-9392796791</p>
+                            <p>Email: meghana_nangireddy@gmail.com</p>
+                            <p>LinkedIn: in/meghana</p>
+                            <p>Location: Vijayawada,India</p>
+                            <p>Marital Status: Single</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Date of Birth: 18 April 2005</p>
+                            <p>Gender: Female</p>
+                            <p>Nationality: Indian</p>
+                            <p>Religion: Hindu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="mb-4">
+            <p class="text-justify">Computer Science Engineering student at SRM University with a strong foundation in data analysis and data science. Actively pursuing internship experiences in Data analysis . Demonstrated ability to learn quickly and adapt to new technologies through hands-on project work. Passionate about creating user-friendly applications and solving complex problems through innovative solutions. Currently focused on expanding knowledge in Machine Learning while maintaining academic excellence.</p>
+        </div>
+
+        <!-- Education Section with Collapse -->
+        <div class="mb-4">
+            <h2 class="section-title d-flex justify-content-between">
+                Education
+                <button class="btn btn-link" data-toggle="collapse" data-target="#educationCollapse">
+                    collapse
+                </button>
+            </h2>
+            <div id="educationCollapse" class="collapse show">
+                <!-- Education content -->
+                <div class="ml-3">
+                    <h4>BTech in CSE</h4>
+                    <p>SRM University, Andhra Pradesh</p>
+                    <p>2023-2027</p>
+                    <ul>
+                        <li>Building projects</li>
+                        <li>Learning new skills</li>
+                    </ul>
+                    <h4>Graduated High School</h4>
+                    <p>N.St.Mathew's Public School</p>
+                    <p>2022</p>
+                    <ul>
+        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience Section with Collapse -->
+        <div class="mb-4">
+            <h2 class="section-title d-flex justify-content-between">
+                Work Experience
+                <button class="btn btn-link" data-toggle="collapse" data-target="#workCollapse">
+                    collapse
+                </button>
+            </h2>
+            <div id="workCollapse" class="collapse show">
+                <h4>Data Analyst Intern</h4>
+                <p>BIOhack technologies, Mumbai, India</p>
+                <p>2023-2024</p>
+                <ul>
+                    <li>Helped in analysis of the new product</li>
+                    <li>collaborated with the working professionals</li>
+                    <li>Researched Data needs for the users</li>
+                </ul>
+                <h4>Machine learing Intern</h4>
+                <p>Bis technologies, Vijayawada, India</p>
+                <p>2024-present</p>
+                <ul>
+                    <li>Employed in developing machine learning models</li>
+                    <li>Built data analysis framework</li>
+                    <li>Gained a lot  of experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills Section with Table -->
+        <div class="mb-4">
+            <h2 class="section-title d-flex justify-content-between">Skills
+                <button class="btn btn-link" data-toggle="collapse" data-target="#educationCollapse">
+                    collapse
+                </button>
+            </h2>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Technical Skills</th>
+                    <th>Soft Skills</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Git and Github</li>
+                            <li>Devops</li>
+                            <li>Bash</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Stakeholder Engagement</li>
+                            <li>Leadership and Team Coordination</li>
+                            <li>Communication</li>
+                            <li>Problem-Solving</li>
+                            <li>Strategic Planning</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+</body>
+</html>
